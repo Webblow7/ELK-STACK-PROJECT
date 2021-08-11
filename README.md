@@ -32,17 +32,17 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-+-------------+---------------------+----------------------+
-| Name        | Publicly Accessible | Allowed IP Addresses |
-+-------------+---------------------+----------------------+
-| Jump Box    | Yes                 | Local Host           |
-+-------------+---------------------+----------------------+
-| WEB1        | No                  | 10.0.0.6             |
-+-------------+---------------------+----------------------+
-| WEB2        | No                  | 10.0.0.6             |
-+-------------+---------------------+----------------------+
-| ELK MONSTER | No                  | 10.1.0.4             |
-+-------------+---------------------+----------------------+
++-------------+------------+------------+------------------+
+| Name        | Function   | IP Address | OPERATION System |
++-------------+------------+------------+------------------+
+| Jump Box    | Gateway    | 10.0.0.4   | Linux            |
++-------------+------------+------------+------------------+
+| WEB1        | Terminal   | 10.0.0.5   | Linux            |
++-------------+------------+------------+------------------+
+| WEB2        | Terminal   | 10.0.0.6   | Linux            |
++-------------+------------+------------+------------------+
+| ELK MONSTER | Elk Server | 10.1.0.4   | Linux            |
++-------------+------------+------------+------------------+
 
 ### Access Policies
 
@@ -56,17 +56,12 @@ Machines within the network can only be accessed by each other. The WEB1,WEB2 VM
 
 A summary of the access policies in place can be found in the table below.
 
-+-------------+---------------------+----------------------+
-| Name        | Publicly Accessible | Allowed IP Addresses |
-+-------------+---------------------+----------------------+
-| Jump Box    | Yes                 | Local Host           |
-+-------------+---------------------+----------------------+
-| WEB1        | No                  | 10.0.0.6             |
-+-------------+---------------------+----------------------+
-| WEB2        | No                  | 10.0.0.6             |
-+-------------+---------------------+----------------------+
-| ELK MONSTER | No                  | 10.1.0.4             |
-+-------------+---------------------+----------------------+
+| Name        | Publicity Accessible | Allowed IP Addresses |
+|-------------|----------------------|----------------------|
+| Jump Box    | Yes                  | Local Host           |
+| WEB1        | No                   | 10.0.0.6             |
+| WEB2        | No                   | 10.0.0.5             |
+| Elk Monster | No                   | 10.1.0.4             |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it makes the deployment more efficent.
