@@ -73,7 +73,7 @@ The following screenshot displays the result of running `docker ps` after succes
 **Note**: The following image link needs to be updated. Replace `docker_ps_output.png` with the name of your screenshot image file.  
 
 
-[Elk playbook](Ansible/ELK PLAY BOOK.pdf)
+[Elk playbook](https://github.com/Webblow7/ELK-STACK-PROJECT/blob/458a0af37fa96a5b634111ce67cc6a134678fc3d/Ansible/ELK%20PLAY%20BOOK.pdf)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
